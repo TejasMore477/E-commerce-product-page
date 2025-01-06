@@ -4,7 +4,7 @@ import menuIcon from "/src/assets/images/icon-menu.svg";
 import logo from "/src/assets/images/logo.svg";
 import avatar from "/src/assets/images/image-avatar.png";
 
-function NavBar({ setSideBar, setCart }) {
+function NavBar({ setSideBar, setCart,count }) {
   return (
     <div className="relative w-full px-6 py-2 flex items-center justify-between">
       <div className="flex items-center justify-start gap-3">
@@ -33,7 +33,7 @@ function NavBar({ setSideBar, setCart }) {
             alt="cart"
           />
           <h2 className="absolute -top-1 right-0 bg-Orange text-[2.5vw] font-semibold px-1 rounded-full">
-            3
+            {count}
           </h2>
         </div>
         <img className="size-[10vw] cursor-pointer" src={avatar} alt="avatar" />
