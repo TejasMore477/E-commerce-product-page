@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
+import NavBar from './components/NavBar';
 
 function App() {
+  const [ sideBar, setSideBar ] = useState(false);
+  
   return (
-    <div>App</div>
+    <div className='w-full'>
+      <NavBar setSideBar={setSideBar}/>
+    </div>
   )
 }
 
