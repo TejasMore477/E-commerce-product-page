@@ -4,7 +4,10 @@ import menuIcon from "/src/assets/images/icon-menu.svg";
 import logo from "/src/assets/images/logo.svg";
 import avatar from "/src/assets/images/image-avatar.png";
 
-function NavBar({ setSideBar, setCart,count }) {
+function NavBar({ setSideBar, setCart, count }) {
+  function text(){
+    console.log("is clicked");
+  }
   return (
     <div className="relative w-full px-6 py-2 flex items-center justify-between">
       <div className="flex items-center justify-start gap-3">
@@ -23,7 +26,7 @@ function NavBar({ setSideBar, setCart,count }) {
         <div
           onClick={(e) => {
             e.stopPropagation();
-            setCart((prev) => !prev);
+            setCart((prev) => !prev)
           }}
           className="relative"
         >
