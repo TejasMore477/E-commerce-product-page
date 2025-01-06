@@ -6,7 +6,7 @@ import avatar from "/src/assets/images/image-avatar.png";
 
 function NavBar({ setSideBar }) {
   return (
-    <div className="w-full px-6 py-4 flex items-center justify-between">
+    <div className="w-full px-6 py-3 flex items-center justify-between">
       <div className="flex items-center justify-start gap-3">
         <img
           onClick={() => setSideBar((prev) => !prev)}
