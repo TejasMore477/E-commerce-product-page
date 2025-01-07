@@ -14,7 +14,7 @@ function App() {
   return (
     <div
       onClick={() => setCart(false)}
-      className=" w-full relative min-h-screen"
+      className=" w-full relative min-h-screen pb-5"
     >
       <NavBar setSideBar={setSideBar} setCart={setCart} count={count} />
       {sideBar && <SideBar setSideBar={setSideBar} />}
@@ -26,6 +26,10 @@ function App() {
           <Counter count={count} setCount={setCount} />
         </div>
       </div>
+      <div className=" w-full text-center font-light text-sm">
+    Challenge by <a className="text-blue-700" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="" className="text-blue-700">Tejas More</a>.
+  </div>
     </div>
   );
 }
