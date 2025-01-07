@@ -28,7 +28,7 @@ function App() {
       </div>
       <div className=" w-full text-center font-light text-sm">
     Challenge by <a className="text-blue-700" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="" className="text-blue-700">Tejas More</a>.
+    Coded by <a href="https://github.com/TejasMore477/E-commerce-product-page" className="text-blue-700">Tejas More</a>.
   </div>
     </div>
   );
