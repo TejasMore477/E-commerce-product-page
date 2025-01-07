@@ -7,13 +7,13 @@ function Cart({ count, setCount }) {
   return (
     <div
       onClick={(e) => e.stopPropagation()}
-      className="absolute z-40 top-14 left-0 right-0 px-5 w-full"
+      className="absolute z-40 top-14 left-0 right-0 px-5 w-full sm:flex items-center lg:justify-end justify-center"
     >
-      <div className="bg-white w-full h-full py-3 px-4 rounded-lg shadow-2xl">
-        <h2 className="text-[5vw] font-semibold">Cart</h2>
+      <div className="bg-white lg:w-[35%] sm:w-[60%] w-full h-full py-3 px-4 rounded-lg shadow-2xl">
+        <h2 className="lg:text-[1.4vw] sm:text-[3vw] text-[4vw] font-semibold">Cart</h2>
         {count === 0 ? (
-          <div className="pt-4 w-full my-5 border-t-[1.5px] h-32">
-            <h3 className="text-center text-[3.5vw] pt-6 font-semibold text-Dark_grayish_blue">
+          <div className="pt-4 w-full lg:my-3 my-5 border-t-[1.5px] h-32">
+            <h3 className="lg:text-[1.5vw] sm:text-[2.5vw] text-center text-[3.5vw] pt-6 font-semibold text-Dark_grayish_blue">
               Your Cart id Empty
             </h3>
           </div>
@@ -22,17 +22,17 @@ function Cart({ count, setCount }) {
             <div className="pt-4 w-full my-5 border-t-[1.5px] flex items-center justify-between gap-3 flex-shrink-0 flex-nowrap">
               <div className="flex items-center justify-start gap-3">
                 <img
-                  className="size-[13vw] rounded-lg"
+                  className="lg:size-[6vw] sm:size-[10vw] size-[13vw] rounded-lg"
                   src={thumbnail}
                   alt="product"
                 />
                 <div>
-                  <p className="text-[3.5vw] font-semibold text-Grayish_blue">
+                  <p className="lg:text-[1.3vw] lg:leading-none sm:text-[2vw] text-[3vw] font-semibold text-Grayish_blue">
                     Fall Limited Edition Sneakers{" "}
                   </p>
-                  <p className="text-[3.5vw] font-semibold text-Grayish_blue">
+                  <p className="lg:text-[1.3vw] sm:text-[2.5vw] text-[3vw] font-semibold text-Grayish_blue">
                     $125.00 x <span>{count} </span>
-                    <span className="text-[4vw] pl-1 text-black font-bold">
+                    <span className="lg:text-[1.3vw] sm:text-[2.5vw] text-[3vw] pl-1 text-black font-bold">
                       ${total.toFixed(2)}
                     </span>
                   </p>
@@ -43,7 +43,7 @@ function Cart({ count, setCount }) {
                   e.stopPropagation();
                   setCount(0);
                 }}
-                className="size-[4vw]"
+                className="lg:w-[1.5vw] sm:w-[2vw] w-[3vw]"
                 src={trash}
                 alt="delete"
               />
